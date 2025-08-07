@@ -1,0 +1,1 @@
+<h1>CREATION PAGE CANAL 2</h1>

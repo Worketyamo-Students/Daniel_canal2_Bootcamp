@@ -8,6 +8,7 @@
     --secondarycolor:#79AC78;
     --ibmfont:"IBM Plex Sans Hebrew", sans-serif;
     --interfontfamily:"Inter", sans-serif;
+    --opensans:"Open Sans", sans-serif;
 }
 
 * {
@@ -17,6 +18,7 @@
    box-sizing: border-box;
 }
 body {
+    margin: 2rem;
     width: 100%;
     height: 100%;
     display: flex;
@@ -32,11 +34,11 @@ html {
 
 nav {
     width: 100vw;
-    height: 5rem;
+    height: 8rem;
     display: flex;
     padding: 0 2rem;
     justify-content:space-between;
-    background-color:cornflowerblue;
+    background-color:rgb(255, 255, 255);
 }
 nav ul {
     display: flex;
@@ -45,6 +47,7 @@ nav ul {
     list-style: none;
     width: 100vw;
     height: 100%;
+    font-family: var(--interfontfamily);
     
 
 }
@@ -69,7 +72,8 @@ nav .active {
 /*fin du traitement du header*/
 
 /* Debut du traitement de la section */
-
+   
+     /*section 1*/
 .section1 {
     width: 100%;
     height: 50rem;
@@ -77,7 +81,7 @@ nav .active {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-color: rgb(112, 66, 5);
+    background-color: rgb(255, 255, 255);
 }
 .section1 .nganou {
     display: flex;
@@ -96,8 +100,28 @@ nav .active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
    
+}
+
+.section1 .a_la_une img {
+    height: 15rem;
+    width: 23rem;
+    border-radius: 10%;
+}
+
+.section1 .a_la_une h2 {
+    font-family: var(--ibmfont);
+    font-size: 2rem;
+}
+
+.section1 .a_la_une h4 {
+    font-family: var(--ibmfont);
+    font-size: 2rem;
+}
+.section1 .a_la_une p {
+    font-family: var(--opensans);
+    font-size: 1.4rem;
 }
 .section1 .a_la_une .un {
 
@@ -112,7 +136,9 @@ nav .active {
 .section1 .a_la_une .un .text {
     font-size: 15px;
 }
+/*Fin de la section 1*/
 
+/*section 2*/
 .section2 {
     display: flex;
     justify-content:space-between;
@@ -121,10 +147,196 @@ nav .active {
     width: 100%;
     height: 30rem;
     flex-direction: row;
-    background-color: burlywood;
+    background-color: rgb(255, 255, 255);
+    padding: auto;
 }
 .section2 img {
-    height: 50%;
-    width: 100%;
+    height: 25rem;
+    width: 24rem;
+    border-radius: 10px;
 }
+.section2 h3 {
+    font-size: 1.5rem;
+}
+.section2 p {
+    font-size: 1.3rem;
+    font-family: var(--interfont);
+    color: var(--secondarycolor);
+}
+/*fin de la section 2*/
+
+/*section 3*/
+
+.section3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.section3 h1 {
+    font-family: var(--interfont);
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+}
+.section3 h1 {
+    font-family: var(--interfont);
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+}
+.section3 img {
+    height: 62.3rem;
+    width: 100rem;
+}
+.section3 .martinez {
+    display: flex;
+    justify-content: center;
+}
+/*fin de la section 3*/
+
+/*section 4*/
+
+.section4 {
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+
+}
+.section4 .canal_matin {
+    flex: 1;
+    height: 30rem;
+   
+}
+.section4 .canal_matin_text {
+    flex: 1;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+.section4 .canal_matin_text h1 {
+    color: var(--primarycolor);
+    font-size: 4.8rem;
+    font-family: var(--ibmfont);
+
+}
+.section4 .canal_matin_text p {
+    color:#000E01;
+    font-family: var(--opensans);
+    font-size: 2.4rem;
+}
+
+.section4 .canal_matin_text .emojis {
+    display: flex;
+    justify-content:flex-start;
+    gap: 1rem;
+}
+/*fin de la section 4*/
+
+/*section 5*/
+
+.section5 {
+    height: 40rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.section5 p {
+    font-size: 1.3rem;
+    font-family: var(--interfontfamily);
+    color: var(--secondarycolor);
+}
+.section5 h2 {
+    font-size: 2.5rem;
+}
+/*fin de la section 5*/
+
+/*section 6*/
+
+.section6 {
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+} 
+.section6 h1 {
+    font-size: 4.8rem;
+    font-family: var(--ibmfont);
+    color: var(--primarycolor);
+}
+.section6 p {
+    font-size: 2.4rem;
+    font-family: var(--opensans);
+    color: #000E01;
+}
+.section6 .comment_text .emojis {
+    display: flex;
+    justify-content:flex-start;
+    gap: 1rem;
+}
+/*fin de la section 6*/
+
+/* section 7*/
+.section7 {
+    display: flex;
+    height: 60rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.section7 img {
+    display: flex;
+    justify-content: center;
+    width: 100rem;
+}
+/*fin de la section 7*/
+
+/*section 8*/
+.section8 {
+    display: flex;
+    justify-content: space-around;
+}
+.section8 p {
+    color: var(--secondarycolor);
+    font-family: var(--interfontfamily);
+    font-size: 1.2rem;
+}
+.section8 h1 {
+    color: #000E01;
+    font-family:var(--ibmfont);
+    font-size: 2.4rem;
+}
+/*fin de la section 8*/
+
+/*footer*/
+.footer {
+    height: 40rem;
+    background-color: var(--secondarycolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .logo_canal_2 {
+    display: flex;
+    flex: 2;
+    width: 38rem;
+    height: 30rem;
+}
+.footer .emojis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+    width: 40rem;
+    gap: 3rem;
+}
+
+
 
