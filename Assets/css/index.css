@@ -1,7 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
-    --premium: #618264;
-    --actualite:#79AC78;
+     --primarycolor: #618264;
+    --neutralcolor:#000E01;
+    --secondarycolor:#79AC78;
+    --ibmfont:"IBM Plex Sans Hebrew", sans-serif;
+    --interfontfamily:"Inter", sans-serif;
 }
 
 * {
@@ -13,11 +19,9 @@
 body {
     width: 100%;
     height: 100%;
-     overflow-x: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    overflow-x: hidden;
 
 }
 html {
@@ -26,37 +30,101 @@ html {
 
 /* Debut du taitement du header*/
 
-.header {
+nav {
     width: 100vw;
     height: 5rem;
     display: flex;
+    padding: 0 2rem;
     justify-content:space-between;
+    background-color:cornflowerblue;
 }
-.header ul {
+nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    width: 100%;
+    width: 100vw;
     height: 100%;
+    
+
 }
-.header button {
-    background-color: var(--premium);
+nav button {
+    background-color: var(--primarycolor);
     border-radius: 40%;
     color: white;
     padding: 0.5rem 1rem;
     border: none;
     font-size: 2rem;
 }
-.header a {
+nav a {
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
+}
+nav .active {
+    color: var(--secondarycolor);
 }
 
 /*fin du traitement du header*/
 
 /* Debut du traitement de la section */
 
+.section1 {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(112, 66, 5);
+}
+.section1 .nganou {
+    display: flex;
+    flex: 3;
+}
+.section1 .nganou img {
+    padding: 2rem;
+}
+
+
+.section1 .a_la_une {
+    display: flex;
+    flex: 2;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+   
+}
+.section1 .a_la_une .un {
+
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+.section1 .a_la_une .un .text {
+    font-size: 15px;
+}
+
+.section2 {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    list-style: none;
+    width: 100%;
+    height: 30rem;
+    flex-direction: row;
+    background-color: burlywood;
+}
+.section2 img {
+    height: 50%;
+    width: 100%;
+}
 
